@@ -10,7 +10,7 @@ def cekRegex(query,ask):
 			c += 1
 	return (c == kata)
 
-def main():
+def regex():
 	factory = StemmerFactory()
 	stemmer = factory.create_stemmer()
 	question = open("ask_indo.txt","r")
@@ -27,12 +27,12 @@ def main():
 		jawaban.append(s.rstrip())
 
 	query = input()
+	query.replace("?","")
 	query = stemmer.stem(query)
-	
 	query = query.split()
 	qtemp = query.copy()
 	
-	# print (query)
+
 	for q in (query):
 		# print(q)
 		for s in (sw):
@@ -46,7 +46,7 @@ def main():
 	#print(pertanyaan)
 	for s in pertanyaan:
 		#print(s)
-		if (cekRegex(query,s)):
+		if (cekRegex(qtemp,s)):
 			found = True
 			#print("hore")
 			break
@@ -57,4 +57,4 @@ def main():
 	if (found):
 		print(jawaban[c])	
 
-main()
+regex()
