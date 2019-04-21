@@ -21,7 +21,7 @@ def KMPSearch(pat, txt):
   
     b = [0]*m 
     
-    computerFail(pat, b, m) 
+    computeFail(pat, b, m) 
   
     i = 0 
     j = 0
@@ -40,7 +40,7 @@ def KMPSearch(pat, txt):
             j = b[j-1]
     return 0
   
-def computerFail(pat, b, m): 
+def computeFail(pat, b, m): 
     len = 0 
   
     b[0] = 0
