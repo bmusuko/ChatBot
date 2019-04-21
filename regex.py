@@ -1,6 +1,27 @@
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 import re
 
+factory = StemmerFactory()
+stemmer = factory.create_stemmer()
+question = open("ask_data.txt","r")
+answer = open("ans.txt","r")
+stopword = open("stopword.txt","r")
+synonimfile = open("synonim.txt","r")
+sw = []
+pertanyaan = []
+jawaban = []
+synonim = []
+for s in stopword:
+	sw.append(s.rstrip())
+for s in question:
+	pertanyaan.append(s.rstrip())
+for s in answer:
+	jawaban.append(s.rstrip())
+for s in synonimfile:
+	synonim.append(s.rstrip())
+
+
+
 def cekRegex(query,ask):
 	kata = len(query)
 	c = 0
@@ -8,23 +29,20 @@ def cekRegex(query,ask):
 		#print(q)
 		if (re.search(r'%s' % (q), ask,re.IGNORECASE)):
 			c += 1
+		else :
+			for sy in synonim:
+				if (re.search(r'%s' % (q), sy,re.IGNORECASE)):
+					word = sy.split()
+					for w in word:
+						#print(w)
+						
+						if (re.search(r'%s' % (stemmer.stem(w)), ask,re.IGNORECASE)):
+							c += 1
+							break
+					break
 	return (c == kata)
 
 def regex():
-	factory = StemmerFactory()
-	stemmer = factory.create_stemmer()
-	question = open("ask_indo.txt","r")
-	answer = open("ans_indo.txt","r")
-	stopword = open("stopword.txt","r")
-	sw = []
-	pertanyaan = []
-	jawaban = []
-	for s in stopword:
-		sw.append(s.rstrip())
-	for s in question:
-		pertanyaan.append(s.rstrip())
-	for s in answer:
-		jawaban.append(s.rstrip())
 
 	query = input()
 	query.replace("?","")
@@ -46,7 +64,7 @@ def regex():
 	#print(pertanyaan)
 	for s in pertanyaan:
 		#print(s)
-		if (cekRegex(qtemp,s)):
+		if (cekRegex(qtemp,stemmer.stem(s))):
 			found = True
 			#print("hore")
 			break
@@ -56,5 +74,3 @@ def regex():
 	#print(c)
 	if (found):
 		print(jawaban[c])	
-
-regex()
