@@ -72,3 +72,6 @@ def regex(query):
 	#print(c)
 	if (found):
 		print(jawaban[c])	
+	else :
+		print("Saya tidak mengerti maksud anda")
+		print("Tuliskan kembali pertanyaan yang menurut Anda paling cocok")		

@@ -111,17 +111,23 @@ def kmp(pattern):
     else :
         print("Petanyaan Anda tidak memenuhi confident level yang telah ditentukan")
         print("Terdapat beberapa sugesti pertanyaan yang mungkin")
+        c = 0
         if(indeks1 != -1):
-            print("1. " + daftar[indeks1])
+            print(str(c)+" " + daftar[indeks1])
+            c += 1
         if(indeks2 != -1):
-            print("2. " + daftar[indeks2])
+            print(str(c)+ " " + daftar[indeks2])
+            c += 1
         if(indeks3 != -1):
-            print("3. " + daftar[indeks3])
+            print(str(c)+" " + daftar[indeks3])
+            c += 1
+        if(c==0):
+            print("Saya tidak mengerti maksud anda")
         print("Tuliskan kembali pertanyaan yang menurut Anda paling cocok")
         
   
-ask = ["" for x in range(43)]
-ans = ["" for x in range(43)]
-daftar = ["" for x in range(43)]
+ask = ["" for x in range(63)]
+ans = ["" for x in range(63)]
+daftar = ["" for x in range(63)]
 synonim = ["" for x in range(27)]
 stop = ["" for x in range(758)]

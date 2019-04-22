@@ -134,4 +134,6 @@ def bm(query):
 			if(s[1] >= 0):
 				print (str(c)+".", realq[s[0]])
 				c += 1
+		if (c==0):
+			print("Saya tidak mengerti maksud anda")
 		print("Tuliskan kembali pertanyaan yang menurut Anda paling cocok")		
