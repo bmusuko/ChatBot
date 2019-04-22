@@ -85,10 +85,9 @@ def bmsearch(qtemp,s):
 
 
 
-def bm():
+def bm(query):
 	
 
-	query = input()
 	query = query.replace("?","")
 	query = query.replace("!","")
 	query = query.replace(".","")

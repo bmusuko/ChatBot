@@ -42,9 +42,7 @@ def cekRegex(query,ask):
 					break
 	return (c == kata)
 
-def regex():
-
-	query = input()
+def regex(query):
 	query.replace("?","")
 	query = stemmer.stem(query)
 	query = query.split()

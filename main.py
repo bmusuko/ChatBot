@@ -1,19 +1,16 @@
 import bm
 import kmp
 import regex
+import sys
 
-def main():
-	print("Main program")
-	print("Pilihan input pencarian")
-	print("1. kmp")
-	print("2. bm")
-	print("3. regex")
-	x = int(input())
+def main(query):
+	
+	x = int(sys.argv[1])
 	if(x==1):
-		kmp.kmp()
+		kmp.kmp(sys.argv[2])
 	elif(x==2):
-		bm.bm()
+		bm.bm(sys.argv[2])
 	elif(x==3):
-		regex.regex()
+		regex.regex(sys.argv[2])
 
-main()
+main(sys.argv[1])

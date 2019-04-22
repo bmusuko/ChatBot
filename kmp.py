@@ -21,7 +21,7 @@ def KMPSearch(pat, txt):
   
     b = [0]*m 
     
-    computeFail(pat, b, m) 
+    computerFail(pat, b, m) 
   
     i = 0 
     j = 0
@@ -40,7 +40,7 @@ def KMPSearch(pat, txt):
             j = b[j-1]
     return 0
   
-def computeFail(pat, b, m): 
+def computerFail(pat, b, m): 
     len = 0 
   
     b[0] = 0
@@ -58,9 +58,8 @@ def computeFail(pat, b, m):
                 i += 1
 
 
-def kmp():
+def kmp(pattern):
     inputdatabase(ask, ans, stop)
-    pattern = input()
     pattern = pattern.translate({ord(i): None for i in '?!.,'}) #hapus tanda baca
     pattern = pattern.rstrip()
     pattern = pattern.lower()
