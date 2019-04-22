@@ -12,6 +12,7 @@ Bagaimana Anda membuat array dengan Python?
 Mengapa perlu secara eksplsit menggunakan 'self' saat calls?
 Apa itu 'def' dalam Python?
 Mengapa Python menggunakan identasi?
+Bagaimana jika insert tab di python?
 Mengapa string di Python immutable?
 Mengapa tidak ada switch statement di Python?
 Apa toolkit GUI platform-independen yang ada untuk Python?
@@ -31,6 +32,7 @@ Mengapa harus memisahkan interface dan implementasi?
 keterampilan apa saja yang membantu untuk mempelajari OO?
 Apakah programmer yang jago bahasa C dapat belajar OO dengan mudah?
 Apa kunci belajar OO?
+Bagaimana jika belajar oo dari buku?
 Apa itu privated dan protected inheritance?
 Lebih fleksibel <iostream> atau <stdio.h>?
 Lebih aman <iostream> atau <stdio.h>?
