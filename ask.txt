@@ -12,8 +12,8 @@ Bagaimana Anda membuat array dengan Python?
 Mengapa perlu secara eksplsit menggunakan 'self' saat calls?
 Apa itu 'def' dalam Python?
 Mengapa Python menggunakan identasi?
-Bagaimana jika insert tab di python?
 Mengapa string di Python immutable?
+Bagaimana kalau insert tab di python?
 Mengapa tidak ada switch statement di Python?
 Apa toolkit GUI platform-independen yang ada untuk Python?
 Apa itu tkinter?
@@ -32,7 +32,7 @@ Mengapa harus memisahkan interface dan implementasi?
 keterampilan apa saja yang membantu untuk mempelajari OO?
 Apakah programmer yang jago bahasa C dapat belajar OO dengan mudah?
 Apa kunci belajar OO?
-Bagaimana jika belajar oo dari buku?
+Gimana kalau belajar menggunakan buku?
 Apa itu privated dan protected inheritance?
 Lebih fleksibel <iostream> atau <stdio.h>?
 Lebih aman <iostream> atau <stdio.h>?
@@ -41,3 +41,23 @@ Bagaimana cara menghindarkan memory leak?
 Mengapa menggunakan memcpy() menyebabkan crash program?
 Apa definisi Big Three?
 Apa perbedaan antara overloaded dan overriden fungsi?
+Siapa nama koordinator dosen mata kuliah strategi algoritma 2018/2019?
+Siapa nama koordas strategi algoritma?
+Berapa jumlah SKS minimal untuk lulus S1 di ITB?
+Apa kepanjangan SKSD?
+Tanggal berapa diadakan pemilu tahun ini?
+Sudah berapa kali diadakan pemilu presiden?
+Pemilu diadakan berapa kali setahun?
+Siapa saja pembuat anda?
+Apa saja stack yang dipakai untuk membuat anda?
+Apa nama ibukota Indonesia?
+Nama ibukota Indonesia sebelum disebut Jakarta adalah?
+Siapa pembuat algoritma KMP?
+Siapa pemain catur nomor satu dunia sekarang?
+Apa nama blackhole yang berada di tengah galaksi bimasakti?
+Siapa nama pemain karakter wanita yang direbutkan oleh kedua pria dalam lagu "adu rayu"?
+Berapa jumlah presiden Indonesia?
+Tahun berapa Indonesia merdeka? 1945
+Berapa tahun Indonesia dijajah Jepang?
+Dimana Soekarno memproklamasikan kemerdekaan Indonesia?
+Dimana kantin terdekat Labtek 5?
